@@ -1,0 +1,102 @@
+body{
+    background-color: #383737ec;
+}
+
+/* ===== FOTO DE PERFIL ===== */
+.profile-section {
+    display: flex;
+    justify-content: center;
+    padding: 2rem;
+    border: 1px solid #3498db; /* Azul para identificação */
+  }
+  
+  .profile-pic {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  /* ===== DESCRIÇÃO PESSOAL ===== */
+  .description-section {
+    text-align: center;
+    font-weight: bold;
+    color: #f8f8f8;
+  }
+  
+  /* ===== LINHA DIVISÓRIA ===== */
+  .divider {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .divider-line {
+    width: 80%;
+    height: 4px;
+    background-color: #ccc;
+    border-radius: 2px;
+  }
+  
+  /* ===== LINKS EXTERNOS ===== */
+  .links-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem;
+  }
+  
+  .link-button {
+    display: flex;
+    width: 9rem;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    clip-path: polygon(
+      20px 0%,        /* canto superior esquerdo chanfrado */
+      calc(100% - 20px) 0%, /* canto superior direito chanfrado */
+      100% 50%,       /* ponta direita meio */
+      calc(100% - 20px) 100%, /* canto inferior direito chanfrado */
+      20px 100%,      /* canto inferior esquerdo chanfrado */
+      0% 50%          /* ponta esquerda meio */
+    );
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .link-button img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  /* ===== PROJETOS ===== */
+  .projects-section {
+    padding: 2rem;
+    border: 1px solid #9b59b6; /* Roxo para identificação */
+  }
+  
+  .projects-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .project-card {
+    padding: 1rem;
+    background-color: #f8f8f8;
+    border-radius: 0.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  /* ===== RESPONSIVIDADE DESKTOP ===== */
+  @media (min-width: 768px) {
+    .links-section {
+      justify-content: center;
+    }
+  
+    .projects-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
