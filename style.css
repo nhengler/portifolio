@@ -3,22 +3,30 @@ body{
 }
 
 /* ===== FOTO DE PERFIL ===== */
-.profile-section {
+  .profile-section {
     display: flex;
-    justify-content: center;
-    padding: 2rem;
+    justify-content: left;
     border: 1px solid #3498db; /* Azul para identificação */
   }
-  
+
+  .profile-section p{ 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 3rem;
+    font-size: 2.5rem;
+  }
+
   .profile-pic {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     object-fit: cover;
     border-radius: 50%;
   }
   
   /* ===== DESCRIÇÃO PESSOAL ===== */
   .description-section {
+    margin-top: 1px;
     text-align: center;
     font-weight: bold;
     color: #f8f8f8;
@@ -31,7 +39,7 @@ body{
   }
   
   .divider-line {
-    width: 80%;
+    width: 90%;
     height: 4px;
     background-color: #ccc;
     border-radius: 2px;
@@ -48,9 +56,9 @@ body{
   
   .link-button {
     display: flex;
-    width: 9rem;
-    align-items: center;
-    gap: 0.8rem;
+    width: 10rem;
+    justify-content: center;
+    gap: 0.5rem;
     padding: 0.5rem 1rem;
     border: none;
     clip-path: polygon(
