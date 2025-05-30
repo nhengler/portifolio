@@ -6,7 +6,6 @@ body{
   .profile-section {
     display: flex;
     justify-content: left;
-    border: 1px solid #3498db; /* Azul para identificação */
   }
 
   .profile-section p{ 
@@ -25,33 +24,37 @@ body{
   }
   
   /* ===== DESCRIÇÃO PESSOAL ===== */
+  .about-section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+  
   .description-section {
-    margin-top: 1px;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    font-size: 1.2rem;
     font-weight: bold;
+    line-height: 2rem;
     color: #f8f8f8;
   }
   
-  /* ===== LINHA DIVISÓRIA ===== */
-  .divider {
-    display: flex;
-    justify-content: center;
+  .description-section h2{
+    margin-top: auto;
+    
   }
-  
-  .divider-line {
-    width: 90%;
-    height: 4px;
-    background-color: #ccc;
-    border-radius: 2px;
+
+  .description-section p {
+    margin: 0;
   }
-  
-  /* ===== LINKS EXTERNOS ===== */
+
   .links-section {
     display: flex;
     flex-direction: column;
-    align-items: center;
     gap: 1rem;
-    padding: 2rem;
+    
   }
   
   .link-button {
@@ -59,7 +62,8 @@ body{
     width: 10rem;
     justify-content: center;
     gap: 0.5rem;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 2rem;
+    margin-top: 1rem;
     border: none;
     clip-path: polygon(
       20px 0%,        /* canto superior esquerdo chanfrado */
@@ -77,6 +81,19 @@ body{
     width: 20px;
     height: 20px;
   }
+  
+  /* ===== LINHA DIVISÓRIA ===== 
+  .divider {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .divider-line {
+    width: 90%;
+    height: 4px;
+    background-color: #ccc;
+    border-radius: 2px;
+  }*/
   
   /* ===== PROJETOS ===== */
   .projects-section {
