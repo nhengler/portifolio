@@ -2,6 +2,16 @@ body{
     background-color: #383737ec;
 }
 
+.icon {
+  width: 20px;
+  height: 20px;
+}
+
+hr{
+  margin: 0;
+  height: 1px;
+  color: black;
+}
 /* ===== FOTO DE PERFIL ===== */
   .profile-section {
     display: flex;
@@ -12,15 +22,34 @@ body{
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-left: 3rem;
+    margin-top: 0;
+    margin-left: 1.5rem;
+    margin-bottom: 0.5rem;
     font-size: 2.5rem;
   }
 
   .profile-pic {
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 220px;
     object-fit: cover;
     border-radius: 50%;
+    border: 2px solid black;
+  }
+
+  .role {
+    margin-top: 1rem;
+    font-weight: bold;
+    font-size: 1.25rem;
+    color: #000000;
+  }
+
+  .contact{
+    display: flex;
+    margin-top: 4rem;
+    margin-bottom: 0;
+    padding: 0;
+    gap: 0.5rem;
+    font-size: 1rem;
   }
   
   /* ===== DESCRIÇÃO PESSOAL ===== */
@@ -34,7 +63,8 @@ body{
   .description-section {
     display: flex;
     flex-direction: column;
-    align-items:center;
+    align-items: center;
+    margin-left: 1.2rem;
     font-size: 1.2rem;
     font-weight: bold;
     line-height: 2rem;
@@ -59,7 +89,7 @@ body{
   
   .link-button {
     display: flex;
-    width: 10rem;
+    width: 11rem;
     justify-content: center;
     gap: 0.5rem;
     padding: 0.5rem 2rem;
@@ -75,11 +105,6 @@ body{
     );
     cursor: pointer;
     font-size: 1rem;
-  }
-  
-  .link-button img {
-    width: 20px;
-    height: 20px;
   }
   
   /* ===== LINHA DIVISÓRIA ===== 
