@@ -3,8 +3,8 @@ body{
 }
 
 .icon {
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
 }
 
 hr{
@@ -12,7 +12,7 @@ hr{
   height: 1px;
   color: black;
 }
-/* ===== FOTO DE PERFIL ===== */
+/* ===== PRESENTATION ===== */
   .profile-section {
     display: flex;
     justify-content: left;
@@ -25,11 +25,11 @@ hr{
     margin-top: 0;
     margin-left: 1.5rem;
     margin-bottom: 0.5rem;
-    font-size: 2.5rem;
+    font-size: 1.75rem;
   }
 
   .profile-pic {
-    width: 250px;
+    width: 200px;
     height: 220px;
     object-fit: cover;
     border-radius: 50%;
@@ -37,15 +37,30 @@ hr{
   }
 
   .role {
-    margin-top: 1rem;
+    margin-top: 0.5rem;
     font-weight: bold;
     font-size: 1.25rem;
     color: #000000;
+    white-space: nowrap;                  
+    overflow: hidden;
+    width: 0;                             
+    animation: typing 1s steps(12) 1s forwards, /* 13 letras, 3s de digitação */
+              blink 0.7s infinite;
+  }
+
+  @keyframes typing {
+    from { width: 0; }
+    to { width: 13ch; } /* "Olá, Nicolas!" = 13 caracteres */
+  }
+  
+  @keyframes blink {
+    0%, 100% { border-color: transparent; }
+
   }
 
   .contact{
     display: flex;
-    margin-top: 4rem;
+    margin-top: 6rem;
     margin-bottom: 0;
     padding: 0;
     gap: 0.5rem;
@@ -65,7 +80,7 @@ hr{
     flex-direction: column;
     align-items: center;
     margin-left: 1.2rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: bold;
     line-height: 2rem;
     color: #f8f8f8;
@@ -82,29 +97,20 @@ hr{
 
   .links-section {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     gap: 1rem;
     
   }
   
   .link-button {
     display: flex;
-    width: 11rem;
+    width: 2.75rem;
+    height: 2.75rem;
+    border-radius: 50%;
     justify-content: center;
-    gap: 0.5rem;
-    padding: 0.5rem 2rem;
-    margin-top: 1rem;
-    border: none;
-    clip-path: polygon(
-      20px 0%,        /* canto superior esquerdo chanfrado */
-      calc(100% - 20px) 0%, /* canto superior direito chanfrado */
-      100% 50%,       /* ponta direita meio */
-      calc(100% - 20px) 100%, /* canto inferior direito chanfrado */
-      20px 100%,      /* canto inferior esquerdo chanfrado */
-      0% 50%          /* ponta esquerda meio */
-    );
+    align-items: center;
     cursor: pointer;
-    font-size: 1rem;
+    
   }
   
   /* ===== LINHA DIVISÓRIA ===== 
