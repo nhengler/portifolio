@@ -15,11 +15,11 @@ hr{
 /* ===== PRESENTATION ===== */
   .profile-section {
     display: flex;
-    justify-content: left;
   }
 
   .profile-section p{ 
     display: flex;
+    position: relative;
     align-items: center;
     flex-direction: column;
     margin-top: 0;
@@ -36,27 +36,36 @@ hr{
     border: 2px solid black;
   }
 
+  .links-section {
+    display: flex;
+    position: absolute;
+    flex-direction: row;
+    margin-top: 25%;
+    margin-left: 50%;
+    gap: 0.5rem;
+  }
+
   .role {
     margin-top: 0.5rem;
     font-weight: bold;
     font-size: 1.25rem;
     color: #000000;
     white-space: nowrap;                  
-    overflow: hidden;
+    /*overflow: hidden;*/
     width: 0;                             
     animation: typing 1s steps(12) 1s forwards, /* 13 letras, 3s de digitação */
               blink 0.7s infinite;
   }
 
-  @keyframes typing {
+  /*@keyframes typing {
     from { width: 0; }
-    to { width: 13ch; } /* "Olá, Nicolas!" = 13 caracteres */
+    to { width: 13ch; } 
   }
   
   @keyframes blink {
     0%, 100% { border-color: transparent; }
 
-  }
+  }*/
 
   .contact{
     display: flex;
@@ -93,13 +102,6 @@ hr{
 
   .description-section p {
     margin: 0;
-  }
-
-  .links-section {
-    display: flex;
-    flex-direction: row;
-    gap: 1rem;
-    
   }
   
   .link-button {
