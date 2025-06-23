@@ -12,50 +12,52 @@ hr{
   height: 1px;
   color: black;
 }
+
 /* ===== PRESENTATION ===== */
-  .profile-section {
-    display: flex;
-  }
+.profile-section {
+  display: flex;
+  flex-direction: column; /* Agora os elementos empilham em coluna */
+  align-items: center;
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+}
 
-  .profile-section p{ 
-    display: flex;
-    position: relative;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 0;
-    margin-left: 1.5rem;
-    margin-bottom: 0.5rem;
-    font-size: 1.75rem;
-  }
+.profile-section p {
+  display: flex;
+  flex-direction: column; /* Nome e botões ficam empilhados abaixo da foto */
+  margin: 0;
+  padding: 0;
+}
 
-  .profile-pic {
-    width: 200px;
-    height: 220px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 2px solid black;
-  }
+.profile-pic {
+  width: 14rem;
+  height: 14rem;
+  border: 2px solid black;
+  object-fit: cover;
+  border-radius: 50%;
+}
 
-  .links-section {
-    display: flex;
-    position: absolute;
-    flex-direction: row;
-    margin-top: 25%;
-    margin-left: 50%;
-    gap: 0.5rem;
-  }
 
-  .role {
-    margin-top: 0.5rem;
-    font-weight: bold;
-    font-size: 1.25rem;
-    color: #000000;
-    white-space: nowrap;                  
-    /*overflow: hidden;*/
-    width: 0;                             
-    animation: typing 1s steps(12) 1s forwards, /* 13 letras, 3s de digitação */
+.links-section {
+  position: static; /* Remove o posicionamento absoluto */
+  margin: 1rem 0 0 0; /* Espaço superior */
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.role {
+  margin-top: 0.5rem;
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: #000000;
+  white-space: nowrap;                  
+  /*overflow: hidden;*/
+  width: 0;                             
+  animation: typing 1s steps(12) 1s forwards, /* 13 letras, 3s de digitação */
               blink 0.7s infinite;
-  }
+}
 
   /*@keyframes typing {
     from { width: 0; }
@@ -106,8 +108,8 @@ hr{
   
   .link-button {
     display: flex;
-    width: 2.75rem;
-    height: 2.75rem;
+    width: 2.50rem;
+    height: 2.50rem;
     border-radius: 50%;
     justify-content: center;
     align-items: center;
