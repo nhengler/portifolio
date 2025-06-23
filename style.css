@@ -1,10 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
 body{
     background-color: #383737ec;
+    font-family: 'Montserrat', sans-serif;
 }
 
 .icon {
-  width: 25px;
-  height: 25px;
+  width: 1.75rem;
+  height: 1.75rem;
 }
 
 hr{
@@ -20,115 +23,108 @@ hr{
   align-items: center;
   gap: 1rem;
   margin: 0;
-  padding: 0;
-}
-
-.profile-section p {
-  display: flex;
-  flex-direction: column; /* Nome e botões ficam empilhados abaixo da foto */
-  margin: 0;
-  padding: 0;
+  padding: 0 1rem;
 }
 
 .profile-pic {
-  width: 14rem;
-  height: 14rem;
+  width: 12rem;
+  height: 12rem;
   border: 2px solid black;
   object-fit: cover;
   border-radius: 50%;
 }
 
-
-.links-section {
-  position: static; /* Remove o posicionamento absoluto */
-  margin: 1rem 0 0 0; /* Espaço superior */
+.profile-section p {
   display: flex;
-  justify-content: center;
-  gap: 0.75rem;
+  flex-direction: column; 
+  margin: 0;
+  padding: 0;
+}
+
+.name{
+  font-size: 2.5rem;
+  font-weight: bold;
 }
 
 .role {
+  display: inline-block;
   margin-top: 0.5rem;
-  font-weight: bold;
-  font-size: 1.25rem;
-  color: #000000;
-  white-space: nowrap;                  
-  /*overflow: hidden;*/
-  width: 0;                             
-  animation: typing 1s steps(12) 1s forwards, /* 13 letras, 3s de digitação */
-              blink 0.7s infinite;
+  margin-left: 20%;
+  font-size: 1.5rem;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 1px solid white;
+  color: white;
+  width: 0;
+  animation: typing 1.5s steps(13, end) forwards, blink 0.75s step-end infinite;
 }
 
-  /*@keyframes typing {
-    from { width: 0; }
-    to { width: 13ch; } 
+@keyframes typing {
+  from {
+    width: 0;
   }
-  
-  @keyframes blink {
-    0%, 100% { border-color: transparent; }
-
-  }*/
-
-  .contact{
-    display: flex;
-    margin-top: 6rem;
-    margin-bottom: 0;
-    padding: 0;
-    gap: 0.5rem;
-    font-size: 1rem;
+  to {
+    width: 11.5ch; /* Quantidade de letras */
   }
-  
+}
+
+@keyframes blink {
+  0%, 100% {
+    border-color: transparent;
+  }
+  50% {
+    border-color: white;
+  }
+}
+
+
+.links-section {
+  display: flex;
+  position: static; /* Remove o posicionamento absoluto */
+  margin: 0.5rem 0 0 0; /* Espaço superior */
+  gap: 2.5rem;
+}
+
+.link-button {
+  display: flex;
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: rgb(255, 255, 255);
+}
+
   /* ===== DESCRIÇÃO PESSOAL ===== */
   .about-section{
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    padding: 0 1rem;
+    grid-template-columns: 1fr;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
   }
   
   .description-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 1.2rem;
     font-size: 1rem;
-    font-weight: bold;
+    
     line-height: 2rem;
     color: #f8f8f8;
   }
   
   .description-section h2{
     margin-top: auto;
-    
+    font-size: 1.5rem;
+    font-weight: bold;
   }
 
   .description-section p {
     margin: 0;
+    font-size: 1.5rem;
   }
-  
-  .link-button {
-    display: flex;
-    width: 2.50rem;
-    height: 2.50rem;
-    border-radius: 50%;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    
-  }
-  
-  /* ===== LINHA DIVISÓRIA ===== 
-  .divider {
-    display: flex;
-    justify-content: center;
-  }
-  
-  .divider-line {
-    width: 90%;
-    height: 4px;
-    background-color: #ccc;
-    border-radius: 2px;
-  }*/
   
   /* ===== PROJETOS ===== */
   .projects-section {
