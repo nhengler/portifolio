@@ -48,7 +48,7 @@ hr{
 
 .role {
   display: inline-block;
-  margin-top: 0.5rem;
+  margin-top: 0.75rem;
   margin-left: 20%;
   font-size: 1.5rem;
   white-space: nowrap;
@@ -81,7 +81,7 @@ hr{
 .links-section {
   display: flex;
   position: static; /* Remove o posicionamento absoluto */
-  margin: 0.5rem 0 0 0; /* Espaço superior */
+  margin: 1rem 0 0 0; /* Espaço superior */
   gap: 2.5rem;
 }
 
@@ -101,8 +101,8 @@ hr{
     display: grid;
     padding: 0 1rem;
     grid-template-columns: 1fr;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
   }
   
   .description-section {
@@ -146,13 +146,60 @@ hr{
   }
   
   /* ===== RESPONSIVIDADE DESKTOP ===== */
-  @media (min-width: 768px) {
-    .links-section {
-      justify-content: center;
-    }
-  
-    .projects-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
+  /* Adaptações para telas maiores */
+@media (min-width: 768px) {
+  .profile-section {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    align-items: center;
   }
+
+  .profile-pic {
+    grid-column: 1 / 2;
+    width: 15rem;
+    height: 15rem;
+    margin: 0;
+    padding: 0;
+    
+  }
+
+  .profile-section p {
+    grid-column: 1 / 2;
+    margin: 0;
+
+    
+  }
+
+  .links-section {
+    grid-column: 2 / 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    margin: 0;
+  }
+
+  .description-section {
+    max-width: 800px; /* Limita a largura do texto */
+    margin: 4rem auto; /* Centraliza o bloco de texto */
+    padding: 0 2rem;
+    text-align: center;
+  }
+
+  .description-section h2 {
+    text-align: center;
+  }
+
+  .description-section p {
+    text-align: justify;
+  }
+
+  .projects-grid {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+  }
+}
+
   
