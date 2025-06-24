@@ -146,60 +146,73 @@ hr{
   }
   
   /* ===== RESPONSIVIDADE DESKTOP ===== */
-  /* Adaptações para telas maiores */
-@media (min-width: 768px) {
-  .profile-section {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    
-    align-items: center;
-  }
+  @media (min-width: 768px) {
+    .profile-section {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      margin: 0;
+      padding: 0;
+      
+      align-items: center;
+      
+    }
+  
+    .profile-pic, .profile-section p {
+      grid-column: 1/2;
+      display: flex;
+      
 
-  .profile-pic {
-    grid-column: 1 / 2;
-    width: 15rem;
-    height: 15rem;
-    margin: 0;
-    padding: 0;
-    
-  }
+    }
+  
+    .profile-section .profile-pic {
+      justify-self: center;
+      margin: 0;
+    }
+  
+    .profile-pic{
+      width: 18rem;
+      height: 18rem;
+      border: 3px solid black; 
+    }
 
-  .profile-section p {
-    grid-column: 1 / 2;
-    margin: 0;
+    .profile-section p {
+      justify-self: center;
+      text-align: center;
+      margin: 0;
+      transform: translateY(-5rem);
+    }
 
-    
-  }
+    .links-section {
+      grid-column: 2/2;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      margin: 0;
+      transform: translateY(-15rem);
+    }
 
-  .links-section {
-    grid-column: 2 / 2;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 1.5rem;
-    margin: 0;
-  }
+    /* ===== DESCRIÇÃO PESSOAL ===== */
+    .description-section {
+      max-width: 800px; /* Limita a largura do texto */
+      margin: 1rem auto; /* Centraliza o bloco de texto */
+      padding: 0 2rem;
+      text-align: center;
+    }
 
-  .description-section {
-    max-width: 800px; /* Limita a largura do texto */
-    margin: 4rem auto; /* Centraliza o bloco de texto */
-    padding: 0 2rem;
-    text-align: center;
-  }
+    .description-section h2 {
+      text-align: center;
+    }
 
-  .description-section h2 {
-    text-align: center;
-  }
+    .description-section p {
+      text-align: justify;
+    }
 
-  .description-section p {
-    text-align: justify;
+    /* ===== PROJETOS ===== */
+    .projects-grid {
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 2rem;
+      padding: 2rem;
+    }
   }
-
-  .projects-grid {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    padding: 2rem;
-  }
-}
 
   
