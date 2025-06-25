@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
 body{
-    background-color: #383737ec;
+    background-color: #272729ec;
     font-family: 'Montserrat', sans-serif;
 }
 
@@ -149,52 +149,54 @@ hr{
   @media (min-width: 768px) {
     .profile-section {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(2, 1fr);
       margin: 0;
       padding: 0;
-      
-      align-items: center;
-      
+      gap: 0;
+
+
     }
   
-    .profile-pic, .profile-section p {
-      grid-column: 1/2;
+    .links-section, .profile-section p {
+      grid-column: 2/2;
       display: flex;
-      
-
     }
-  
-    .profile-section .profile-pic {
-      justify-self: center;
-      margin: 0;
-    }
-  
-    .profile-pic{
-      width: 18rem;
-      height: 18rem;
-      border: 3px solid black; 
-    }
-
+    
     .profile-section p {
-      justify-self: center;
-      text-align: center;
-      margin: 0;
-      transform: translateY(-5rem);
+      flex-direction: column;
+      margin-top: 0;
+      margin-left: 8rem;
+    }
+
+    .role{
+      margin: 1rem 0 1rem 4rem;
     }
 
     .links-section {
-      grid-column: 2/2;
+      flex-direction: row;
+      gap: 3rem;
+      margin: 0 0 0 6rem;
+      padding-bottom: 0;
+      transform: translateY(-4rem);
+    }
+
+    .profile-pic{
+      grid-column: 1/2;
+      width: 18rem;
+      height: 18rem;
+      border: 5px solid black; 
+    }
+
+    .profile-pic-container {
       display: flex;
-      flex-direction: column;
-      gap: 1.5rem;
-      margin: 0;
-      transform: translateY(-15rem);
+      justify-content: right;
+      margin: 4rem 12rem 0 0;
     }
 
     /* ===== DESCRIÇÃO PESSOAL ===== */
     .description-section {
       max-width: 800px; /* Limita a largura do texto */
-      margin: 1rem auto; /* Centraliza o bloco de texto */
+      margin: 2rem auto; /* Centraliza o bloco de texto */
       padding: 0 2rem;
       text-align: center;
     }
