@@ -6,8 +6,7 @@ projectCards.forEach((card, index) => {
   card.addEventListener('click', function () {
     
     const description = projectDescriptions[index]; // tirar duvida sobre o colchete de index
-    if (description) {
-      
+    
       if (description.style.maxHeight === '500px') { // testar apenas com 1 if
         
         description.style.maxHeight = '0';
@@ -18,7 +17,7 @@ projectCards.forEach((card, index) => {
         description.style.maxHeight = '500px';
         description.style.opacity = '1';
       }
-    }
+    
   });
 });
 
