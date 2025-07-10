@@ -37,7 +37,7 @@ hr{
 .profile-pic {
   width: 12rem;
   height: 12rem;
-  border: 2px solid black;
+  border: 1px solid white;
   object-fit: cover;
   border-radius: 50%;
 }
@@ -216,11 +216,18 @@ hr{
     font-size: 1rem;
   }
 
+  .redirect-buttons{
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+  }
+
   .technologies{
     display: flex;
     flex-direction: row;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     gap: 1rem;
+    transform: translateX(0.5rem);
   }
 
   .advice{
@@ -234,8 +241,56 @@ hr{
     transform: translateY(-0.4rem);
   }
 
+  /*CONTACTS*/
+
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    color: rgb(255, 255, 255);
+  }
+
+  .contacts h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .contact-info{
+    display: flex;
+    flex-direction: row;
+    gap: 5.5rem;
+    margin-left: 0.5rem;
+  }
+
+  .email{
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+    line-height: 0;
+  }
+
+  .email img{
+    margin-left: 40%;
+  }
+
+  .phone{
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+    line-height: 0;
+  }
+
+  .phone img{
+    margin-left: 40%;
+  }
+
   /* ===== RESPONSIVIDADE DESKTOP ===== */
   @media (min-width: 768px) {
+    .icon {
+      width: 2rem;
+      height: 2rem;
+    }
+    
     .profile-section {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
@@ -271,7 +326,7 @@ hr{
       grid-column: 1/2;
       width: 18rem;
       height: 18rem;
-      border: 5px solid black; 
+      border: 1px solid rgb(0, 0, 0); 
     }
 
     .profile-pic-container {
@@ -298,8 +353,9 @@ hr{
 
     /* ===== PROJETOS ===== */
     .projects-grid {
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 2rem;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr); 
+      gap: 1rem; 
       padding: 2rem;
     }
 
@@ -310,6 +366,16 @@ hr{
     .description {
       font-size: 1rem;
       padding: 1.25rem;
+    }
+
+    .redirect-buttons{
+      display: flex;
+      justify-content: center;
+      gap: 22rem;
+    }
+
+    .technologies{
+      transform: translateX(-0.1rem);
     }
   }
 
