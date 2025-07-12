@@ -87,7 +87,6 @@ hr{
   }
 }
 
-
 .links-section {
   display: flex;
   position: static; 
@@ -106,7 +105,7 @@ hr{
   background-color: rgb(255, 255, 255);
 }
 
-  /* ===== DESCRIÇÃO PESSOAL ===== */
+  /* ===== PERSONAL DESCRIPTION ===== */
   .about-section{
     display: grid;
     padding: 0 1rem;
@@ -136,7 +135,7 @@ hr{
     font-size: 1.5rem;
   }
   
-  /* ===== PROJETOS ===== */
+  /* ===== PROJECTS ===== */
   .projects-section {
     padding: 0 1rem;
   }
@@ -243,8 +242,7 @@ hr{
     transform: translateY(-0.4rem);
   }
 
-  /*CONTACTS*/
-
+  /* ===== CONTACTS ===== */
   .contacts {
     display: flex;
     flex-direction: column;
@@ -254,7 +252,7 @@ hr{
   .contacts h2 {
     text-align: center;
     font-size: 1.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 1rem;
   }
 
   .contact-info{
@@ -284,6 +282,11 @@ hr{
 
   .phone img{
     margin-left: 40%;
+  }
+
+  .phone a{
+    text-decoration: none;
+    color: inherit; 
   }
 
   /* ===== RESPONSIVIDADE DESKTOP ===== */
@@ -337,7 +340,7 @@ hr{
       margin: 4rem 12rem 0 0;
     }
 
-    /* ===== DESCRIÇÃO PESSOAL ===== */
+    /* ===== PERSONAL DESCRIPTION ===== */
     .description-section {
       max-width: 800px; 
       margin: 2rem auto; 
@@ -353,7 +356,7 @@ hr{
       text-align: justify;
     }
 
-    /* ===== PROJETOS ===== */
+    /* ===== PROJECTS ===== */
     .projects-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr); 
@@ -378,6 +381,27 @@ hr{
 
     .technologies{
       transform: translateX(-0.1rem);
+    }
+
+    /* ===== CONTACTS ===== */
+    .contacts {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+    }
+
+    .contacts h2 {
+      text-align: center;
+      font-size: 1.5rem;
+      margin-bottom: 2rem;
+    }
+
+    .contact-info {
+      display: flex;
+      flex-direction: row;
+      gap: 15rem;
+      margin-left: 0.5rem;
     }
   }
 
