@@ -272,6 +272,7 @@ hr{
     display: flex;
     flex-direction: column;
     color: rgb(255, 255, 255);
+    margin-bottom: 2rem;
   }
 
   .contacts h2 {
