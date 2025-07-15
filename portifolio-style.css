@@ -284,7 +284,7 @@ hr{
   .contact-info{
     display: flex;
     flex-direction: row;
-    gap: 5.5rem;
+    gap: 4.5rem;
     margin-left: 0.5rem;
   }
 
