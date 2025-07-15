@@ -441,13 +441,8 @@ hr{
       display: flex;
       flex-direction: column;
       align-items: center;
-      padding: 2rem;
-    }
-
-    .contacts h2 {
-      text-align: center;
-      font-size: 1.5rem;
-      margin-bottom: 2rem;
+      padding: 0 2rem;
+      margin-bottom: 0;
     }
 
     .contact-info {
