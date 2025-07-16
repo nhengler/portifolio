@@ -1,7 +1,6 @@
 const projectCards = document.querySelectorAll('.project-card');
 const projectDescriptions = document.querySelectorAll('.description');
 
-// adiciona o evento de clique a cada cartão de projeto
 projectCards.forEach((card, index) => {
   card.addEventListener('click', function () {
     
