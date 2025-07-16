@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
 body{
-    background: linear-gradient(
+  background: linear-gradient(
       135deg, 
       #0c1235,   
       #152044,   
@@ -10,7 +10,7 @@ body{
       #152044,   /*(efeito de brilho retornando)*/
       #0c1235    
     );
-    font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .icon {
@@ -260,54 +260,40 @@ hr{
     flex-direction: column;
     color: rgb(255, 255, 255);
     margin-bottom: 2rem;
-  }
-
-  .contacts h2 {
-    text-align: center;
-    font-size: 1.5rem;
-    margin-bottom: 0.2rem;
+    margin-left: 0.9rem;
   }
 
   .contact-info{
     display: flex;
-    flex-direction: row;
-    gap: 4.5rem;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .contact-info a{
+    display: flex;
+    text-decoration: none;
+    color: white;
+  }
+
+  .contact-info p{
     margin-left: 0.5rem;
   }
 
   .email{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     font-size: 0.9rem;
     line-height: 0;
     font-weight: bold;
     text-decoration: none;
   }
-
-  .email img{
-    margin-left: 40%;
-  }
-
-  .email a{
-    text-decoration: none;
-    color: inherit; 
-  }
-
+  
   .phone{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     font-size: 0.9rem;
     line-height: 0;
     font-weight: bold;
-  }
-
-  .phone img{
-    margin-left: 40%;
-  }
-
-  .phone a{
-    text-decoration: none;
-    color: inherit; 
   }
 
   /* ===== RESPONSIVIDADE DESKTOP ===== */
@@ -426,17 +412,26 @@ hr{
     /* ===== CONTACTS ===== */
     .contacts {
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 0 2rem;
-      margin-bottom: 0;
+      flex-direction: column; 
+      color: rgb(255, 255, 255);
+      padding: 0 4rem; 
+      margin-bottom: 1.5rem; 
+      margin-left: 0; 
     }
-
+  
     .contact-info {
       display: flex;
-      flex-direction: row;
-      gap: 15rem;
-      margin-left: 0.5rem;
+      flex-direction: column; 
+      gap: 1.5rem; 
+      margin-left: 0; 
+    }
+
+    .contacts h3 {
+      font-size: 1.5rem;
+    }
+
+    .contact-info p {
+      font-size: 1.2rem;
     }
   }
 
