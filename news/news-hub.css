@@ -16,7 +16,7 @@ body {
   }
 
   .hub-container {
-    padding: 2rem;
+    padding: 1rem;
   }
   
   .grid-container {
@@ -61,7 +61,7 @@ body {
     .grid-container {
       grid-template-columns: repeat(4, 1fr);
     }
-  
+
     .card {
       height: 18rem;
     }
