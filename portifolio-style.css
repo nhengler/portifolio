@@ -232,7 +232,7 @@ hr{
   .redirect-buttons{
     display: flex;
     justify-content: center;
-    gap: 5rem;
+    gap: 3rem;
   }
 
   .technologies{
