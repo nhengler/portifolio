@@ -166,7 +166,7 @@ hr{
   .project-card {
     display: flex;
     flex-direction: column;
-    margin: 1.5rem auto;
+    margin: 1rem auto;
     border-radius: 0.5rem;
   }
 
@@ -232,7 +232,7 @@ hr{
   .redirect-buttons{
     display: flex;
     justify-content: center;
-    gap: 3rem;
+    gap: 5rem;
   }
 
   .technologies{
@@ -386,8 +386,12 @@ hr{
     .projects-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr); 
-      gap: 1rem; 
+      gap: 3rem; 
       padding: 2rem;
+    }
+
+    .project-image{
+      max-height: 550px;
     }
 
     .overlay h3 {
@@ -402,7 +406,7 @@ hr{
     .redirect-buttons{
       display: flex;
       justify-content: center;
-      gap: 22rem;
+      gap: 21rem;
     }
 
     .technologies{
