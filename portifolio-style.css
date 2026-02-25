@@ -385,7 +385,8 @@ hr{
     /* ===== PROJECTS ===== */
     .projects-grid {
       display: grid;
-      grid-template-columns: repeat(2, 1fr); 
+      margin: 0 auto;
+      width: 40rem;
       gap: 3rem; 
       padding: 2rem;
     }
@@ -426,7 +427,7 @@ hr{
     .contact-info {
       display: flex;
       flex-direction: column; 
-      gap: 1.5rem; 
+      gap: 2rem; 
       margin-left: 0; 
     }
 
@@ -435,7 +436,7 @@ hr{
     }
 
     .contact-info p {
-      font-size: 1.2rem;
+      font-size: 1rem;
     }
   }
 
